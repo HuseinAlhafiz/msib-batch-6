@@ -33,7 +33,7 @@
         <table>
             <tr>
                 <th>Document Owner</th>
-                <td>rian ap</td>
+                <td>Dimas Ahmad, M. Hilmy, M. Zulkifli, Rian A.P, Husein Alhafiz </td>
             </tr>
             <tr>
                 <th>Designer</th>
@@ -61,17 +61,127 @@
         <h3>Riwayat Revisi</h3>
         <table>
             <tr>
-                <th>Version</th>
                 <th>Author</th>
-                <th>User Revision Notes</th>
+                <th>Revision Notes</th>
             </tr>
             <tr>
-                <td>0.0.1</td>
-                <td>Author</td>
+                <td>Nama Mentee</td>
                 <td>Initial Version</td>
             </tr>
-        </table>
-        <table>
+            <tr>
+                <td>Nama Mentee</td>
+                <td>Initial Version</td>
+            </tr>
+            <tr>
+                <td>Nama Mentee</td>
+                <td>Initial Version</td>
+            </tr>
+        </table> 
+
+        <h3>Instalsi Guide</h3>
+        <h4>Laravel Project Setup Guide</h4>
+            Laravel Project Setup Guide<br>
+
+            This guide will walk you through the steps required to set up a Laravel project on your local machine. Laravel is a popular PHP framework for building web applications.<br><br>
+            
+            <b>Prerequisites</b><br>
+            
+            Before you begin, make sure you have the following installed on your machine:<br>
+            
+            - required PHP v8.0 or greater<br>
+            - required Composer v2.5.8 or greater<br>
+            - required Node.js v18 (with npm or yarn) or greater<br>
+            - required Git v2.34.1 or greater<br>
+            - optional Docker v25.0.2 or greater<br><br>
+            
+            <b>Getting Started</b><br><br>
+            
+            1. Clone the repository<br><br>
+            sh<br>
+            git clone "link repository"<br><br>
+
+            2. Navigate to the project directory<br><br>
+            sh<br>
+            cd "project directory" <br><br>
+            
+            3. Install PHP dependencies using composer<br><br>
+            sh<br>
+            composer install<br><br>
+        
+            4. Copy .env.example to .env <br><br>
+            sh<br>
+            cp .env.example .env<br><br>
+            
+            5. Generate application key <br><br>
+            sh<br>
+            php artisan key:generate<br><br>
+            
+            6. Install javascript using npm or yarn<br><br>
+            sh<br>
+            npm install<br>
+            # or<br>
+            yarn install<br><br>
+    
+            7. Compile assets<br><br>
+            sh<br>
+            # for local development<br>
+            npm run dev<br>
+            # or<br>
+            yarn dev<br><br>
+            
+            # for production<br>
+            npm run build<br>
+            # or<br>
+            yarn build<br><br>
+    
+            8. Setup your database configuration file. If your are using docker, you can skip this step.<br><br>
+            
+            sh<br>
+            DB_CONNECTION=mysql<br>
+            DB_HOST=127.0.0.1<br>
+            DB_PORT=3306<br>
+            DB_DATABASE=your_database_name<br>
+            DB_USERNAME=your_database_username<br>
+            DB_PASSWORD=your_database_password<br><br>
+            
+            
+            9. Migrate the database<br><br>
+            
+            sh<br>
+            php artisan migrate<br><br>
+            
+            10. Serve application<br><br>
+            
+            sh<br>
+            php artisan serve<br><br>
+
+            <b>Additional Configuration</b><br><br>
+            
+            - Environment Configuration: Update the .env file as per your environment settings (e.g., APP_DEBUG, APP_URL, etc.).<br>
+            - Database Configuration: Modify the database configuration in the .env file according to your requirements.<br>
+            - Cache Configuration: You can configure caching options in the .env file.<br>
+            - Queue Configuration: If your application uses queues, configure the queue driver in the .env file.<br><br>
+            
+            <b>Run Using Docker</b><br><br>
+            
+            For those of u who prefer using docker when serving the application, please follow these steps below:<br>
+            
+            1. Follow the prior step until you are at step [7](#7)<br><br>
+            2. Start the docker container<br><br>
+            
+            sh<br>
+            # run usign docker<br>
+            docker compose up -d<br>
+            # or using docker-compose<br>
+            docker-compose up -d<br><br>
+            
+            3. Migrate the database using sail<br><br>
+            
+            sh<br>
+            ./sail artisan migrate<br>
+            
+
+
 
         <h3>Latar Belakang</h3>  
         Dirancang khusus untuk menyederhanakan dan mengoptimalkan pengadministrasian program di lingkungan kedaireka. Portal memudahkan pengajuan dan proses seleksi oleh semua pihak yang terlibat dalam manajemen program.
