@@ -23,13 +23,16 @@
         th {
             background-color: #f2f2f2;
         }
+        .teks{
+            margin-left: 15px;
+        }
     </style>
     </head>
     <body>
 
         <h1>MF BACKOFFICE BATCH 6</h1>
         <h2>1. INFORMASI UMUM</h2>
-        <h3>Person In Charge</h3>
+        <h3>PERSON IN CHARGE</h3>
         <table>
             <tr>
                 <th>Document Owner</th>
@@ -58,7 +61,7 @@
             </tr>
         </table>
 
-        <h3>Riwayat Revisi</h3>
+        <h3>RIWAYAT REVISI</h3>
         <table>
             <tr>
                 <th>Author</th>
@@ -78,9 +81,8 @@
             </tr>
         </table> 
 
-        <h3>Instalsi Guide</h3>
+        <h3>PETUNJUK INSTALASI</h3>
         <h4>Laravel Project Setup Guide</h4>
-            Laravel Project Setup Guide<br>
 
             This guide will walk you through the steps required to set up a Laravel project on your local machine. Laravel is a popular PHP framework for building web applications.<br><br>
             
@@ -96,78 +98,47 @@
             
             <b>Getting Started</b><br><br>
             
-            1. Clone the repository<br><br>
-            sh<br>
-            git clone "link repository"<br><br>
+            <p><b>1. Clone the repository</b></p>
+            <p class="teks">sh <br>git clone "link repository </p>
 
-            2. Navigate to the project directory<br><br>
-            sh<br>
-            cd "project directory" <br><br>
+            <p><b>2. Navigate to the project directory</b></p>
+            <p class="teks">sh <br>cd "project directory" </p>
             
-            3. Install PHP dependencies using composer<br><br>
-            sh<br>
-            composer install<br><br>
+            <p><b>3. Install PHP dependencies using composer</b></p>
+            <p class="teks">sh <br>cd composer install </p>
         
-            4. Copy .env.example to .env <br><br>
-            sh<br>
-            cp .env.example .env<br><br>
+            <p><b>4. Copy .env.example to .env</b></p>
+            <p class="teks">sh <br>cp .env.example .env</p>
             
-            5. Generate application key <br><br>
-            sh<br>
-            php artisan key:generate<br><br>
+            <p><b>5. Generate application key</b></p> 
+            <p class="teks">sh <br>php artisan key:generate</p>
             
-            6. Install javascript using npm or yarn<br><br>
-            sh<br>
-            npm install<br>
-            # or<br>
-            yarn install<br><br>
-    
-            7. Compile assets<br><br>
-            sh<br>
-            # for local development<br>
-            npm run dev<br>
-            # or<br>
-            yarn dev<br><br>
-            
-            # for production<br>
-            npm run build<br>
-            # or<br>
-            yarn build<br><br>
-    
-            8. Setup your database configuration file. If your are using docker, you can skip this step.<br><br>
-            
-            sh<br>
-            DB_CONNECTION=mysql<br>
-            DB_HOST=127.0.0.1<br>
-            DB_PORT=3306<br>
-            DB_DATABASE=your_database_name<br>
-            DB_USERNAME=your_database_username<br>
-            DB_PASSWORD=your_database_password<br><br>
-            
-            
-            9. Migrate the database<br><br>
-            
-            sh<br>
-            php artisan migrate<br><br>
-            
-            10. Serve application<br><br>
-            
-            sh<br>
-            php artisan serve<br><br>
+            <p><b>6. Install javascript using npm or yarn</b></p>
+            <p class="teks">sh <br>npm install<br>or<br>yarn install</p>
 
-            <b>Additional Configuration</b><br><br>
+            <p><b>7. Compile assets</b></p>
+            <p class="teks">sh <br>for local development<br>npm run dev<br>or<br>yarn dev</p>
+    
+            <p><b>8. Setup your database configuration file. If your are using docker, you can skip this step.</b></p>
+            <p class="teks">sh <br>
+                DB_CONNECTION=mysql<br>DB_HOST=127.0.0.1<br>DB_PORT=3306<br>DB_DATABASE=your_database_name<br>DB_USERNAME=your_database_username<br>DB_PASSWORD=your_database_password<br></p>            
             
-            - Environment Configuration: Update the .env file as per your environment settings (e.g., APP_DEBUG, APP_URL, etc.).<br>
-            - Database Configuration: Modify the database configuration in the .env file according to your requirements.<br>
-            - Cache Configuration: You can configure caching options in the .env file.<br>
-            - Queue Configuration: If your application uses queues, configure the queue driver in the .env file.<br><br>
+            <p><b>9. Migrate the database</b></p>
+            <p class="teks">sh <br>php artisan migrate</p>
             
-            <b>Run Using Docker</b><br><br>
+            <p><b>10. Serve application</b></p>
+            <p class="teks">sh <br>php artisan serve</p>
+
+            <p><b>Additional Configuration</b></p>
+            <p class="teks">- Environment Configuration: Update the .env file as per your environment settings (e.g., APP_DEBUG, APP_URL, etc.).<br>- Database Configuration: Modify the database configuration in the .env file according to your requirements.<br>- Cache Configuration: You can configure caching options in the .env file.<br>- Queue Configuration: If your application uses queues, configure the queue driver in the .env file.<br>
+            </p>  
+
+            <p><b>Run Using Docker</b></p>
             
-            For those of u who prefer using docker when serving the application, please follow these steps below:<br>
+            <p>For those of u who prefer using docker when serving the application, please follow these steps below:</p>
             
-            1. Follow the prior step until you are at step [7](#7)<br><br>
-            2. Start the docker container<br><br>
+            <b>1. Follow the prior step until you are at step [7](#7)</b><br><br>
+            <b>2. Start the docker container</b><br><br>
             
             sh<br>
             # run usign docker<br>
@@ -183,15 +154,21 @@
 
 
 
-        <h3>Latar Belakang</h3>  
-        Dirancang khusus untuk menyederhanakan dan mengoptimalkan pengadministrasian program di lingkungan kedaireka. Portal memudahkan pengajuan dan proses seleksi oleh semua pihak yang terlibat dalam manajemen program.
+        <h3>Latar Belakang</h3>
+        <p class="teks">Sebagai bagian dari kerangka kebijakan Merdeka Belajar Kampus Merdeka (MBKM), Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi mengimplementasikan berbagai program untuk membangun ekosistem yang
+            mendorong peningkatan mutu dan relevansi pendidikan tinggi di Indonesia. Termasuk diantaranya adalah penawaran berbagai program pendanaan berbasis kompetisi.<br><br>
+            Berbagai data dan informasi di lapangan menunjukkan bahwa sejumlah penelitian yang diselenggarakan di perguruan tinggi telah menghasilkan luaran yang memiliki potensi untuk diterapkan sebagai solusi dari berbagai
+            persoalan di masyarakat atau dikembangkan untuk komersialisasi yang dapat meningkatkan produktivitas dan daya saing nasional. Selain itu, sejumlah perguruan tinggi juga memiliki kepakaran yang mumpuni untuk menjawab
+            berbagai persoalan yang dihadapi sektor swasta maupun Pemerintah yang pada gilirannya akan mendorong peningkatan kinerja dan daya saing nasional</p>
+
         <h3>Tujuan</h3> 
-        Terwujudnya terpusat untuk seluruh pemangku kepentingan di
+        <p class="teks">Terwujudnya terpusat untuk seluruh pemangku kepentingan di
         lingkungan Sekretariat Direktorat Jenderal Pendidikan Tinggi, Riset, dan Teknologi
         (Sekditjen Diktiristek), Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Republik
-        Indonesia (Kemendikbudristek RI).
-            
+        Indonesia (Kemendikbudristek RI).</p>
+        
             <h2>ROLES</h2>
+        <table>
             <tr>
                 <th>No</th>
                 <th>User Category</th>
@@ -340,8 +317,6 @@
                 <td>ini ceritanya link figma</td>
             </tr>
             <tr>
-                <td>API Mapping</td>
-                <td>GET API Endpoint</td>
             </tr>
         </table>
 
@@ -435,10 +410,6 @@
             <tr>
                 <td>Link figma</td>
                 <td>ini ceritanya link figma</td>
-            </tr>
-            <tr>
-                <td>API Mapping</td>
-                <td>GET API Endpoint</td>
             </tr>
         </table>
         <img src="image/Screenshot 2024-03-07 113401.png" alt="" width="100%">
