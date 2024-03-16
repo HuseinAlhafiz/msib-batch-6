@@ -168,8 +168,7 @@ Tujuan utama Program Backoffice Kedaireka adalah untuk mendorong terjadinya kerj
 | Short Explanation | Fitur yang digunakan oleh pengusul setelah login supaya dapat melihat Daftar Proposal yang diinginkan |
 | Document Status   | Draft                                                                                                 |
 
-\
-
+<figure><img src=".gitbook/assets/pengusul-dafpro.png" alt=""><figcaption></figcaption></figure>
 
 #### REQUIREMENT
 
